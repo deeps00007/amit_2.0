@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="style 2.css">
+	<link rel="icon" type="image" href="/WhatsApp Image 2023-06-17 at 15.18.08.jpg" />
+	<!-- whatsapp -->
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="floating-wpp.min.js"></script>
+	<script src="https://kit.fontawesome.com/d7fa63af17.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="floating-wpp.min.css">
+
+</head>
+
+<body>
+	<section class="contact">
+		<div class="content">
+			<h2>Contact Us</h2>
+			<p>CALL US FOR A MEETING OR FEEL FREE TO VISIT OUR FACILITY
+				We love our customers, </p>
+			<br>
+			<p id="smalline">
+				<span>so feel free to visit during normal business hours.</span>
+			</p>
+		</div>
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>Kadipur, near boxer petrol pump,<br> Sector 37B,Gurugram<br> Haryana,122001</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p id="phone" onclick="copyPhoneNumber()">+91 7217667887</p><span>click to copy</span>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p id="email" onclick="copyEmail()">newageautomotiveindustries@gmail.com </p><span>click to copy</span>
+					</div>
+				</div>
+				
+					<h2 class="txt">Connect with us</h2>
+					<ul class="sci">
+						<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+					</ul>
+			</div>
+					<spann>
+					
+						<p>Click the link below to open the location on Google Maps:</p>
+	
+						<!-- Google Map location link -->
+						<a href="https://maps.app.goo.gl/ZMe7ykGMuegg8f9C7" target="_blank"><i class="fa-solid fa-location-dot"></i> Open Location on Google
+						Maps</a>
+					</spann>
+
+		
+			</section>
+			<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+			<!-- whatsapp -->
+			<div id="myDiv"></div>
+			</body>
+			<script type="text/javascript">
+				$(function () {
+					$('#myDiv').floatingWhatsApp({
+						phone: '+917217667887',
+						showPopup: 'true',
+						popupMessage: "Hello sir ",
+						HeaderTitle: "Whatsapp Chat",
+						position: 'right',
+					});
+				});
+			</script>
+			<script>
+        function copyEmail() {
+            // Select the email address
+            var emailElement = document.getElementById('email');
+            var emailText = emailElement.textContent || emailElement.innerText;
+
+            // Create a temporary input element
+            var tempInput = document.createElement('input');
+            tempInput.setAttribute('value', emailText);
+            document.body.appendChild(tempInput);
+
+            // Copy the value from the temporary input
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Show a confirmation message
+            alert('Email address copied: ' + emailText);
+        }
+    </script>
+	<script>
+        function copyPhoneNumber() {
+            // Select the phone number
+            var phoneNumberElement = document.getElementById('phone');
+            var phoneNumber = phoneNumberElement.textContent || phoneNumberElement.innerText;
+
+            // Create a temporary input element
+            var tempInput = document.createElement('input');
+            tempInput.setAttribute('value', phoneNumber);
+            document.body.appendChild(tempInput);
+
+            // Copy the value from the temporary input
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Show a confirmation message
+            alert('Phone number copied: ' + phoneNumber);
+        }
+    </script>
+			</html>
