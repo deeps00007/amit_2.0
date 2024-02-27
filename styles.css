@@ -258,7 +258,7 @@ header nav ul li a {
     /* border-radius: 10px; */
 }
 .thumbnail .item.active{
-    filter: brightness(1.5);
+    filter: brightness(1);
 }
 .thumbnail .item .content{
     position: absolute;
