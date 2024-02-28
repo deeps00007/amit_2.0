@@ -10,7 +10,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(./gray\ background.jpg);
+    background-image: url(./images/gray\ background.jpg);
     color: #eee;
 } 
 
@@ -73,7 +73,7 @@ header nav ul li a {
 } */
 
 #hero {
-    background-image: url('./wallpaperflare.com_wallpaper\ \(1\).png');
+    background-image: url('./images/wallpaperflare.com_wallpaper\ \(1\).png');
     background-size: cover; /* Cover the entire container */
     /* background-position: center; Center the background image */
     color: #fff; /* Set text color */
@@ -105,7 +105,7 @@ header nav ul li a {
 }
 
 #about {
-    background-image: url(./gray\ background.jpg); /* Change the background color */
+    background-image: url(./images/gray\ background.jpg); /* Change the background color */
     background-size: cover; /* Cover the entire container */
     color: #fff; /* Set text color to white */
     padding: 100px 0;
@@ -363,7 +363,7 @@ header nav ul li a {
 }
 
 #contact {
-    background-image: url(./gray\ background.jpg); /* Change the background color */
+    background-image: url(./images/gray\ background.jpg); /* Change the background color */
     background-size: cover; /* Cover the entire container */
     color: #fff; /* Set text color to white */
     padding: 100px 0;
