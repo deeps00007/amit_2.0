@@ -92,3 +92,14 @@ thumbnails.forEach((thumbnail, index) => {
         showSlider();
     })
 })
+
+// floating Whatsapp
+$(function () {
+    $('#myDiv').floatingWhatsApp({
+        phone: '+917217667887',
+        showPopup: 'true',
+        popupMessage: "Hello sir ",
+        HeaderTitle: "Whatsapp Chat",
+        position: 'right',
+    });
+});
