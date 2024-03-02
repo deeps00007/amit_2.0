@@ -137,6 +137,55 @@ header nav ul li a {
   border-radius: 10%;
 }
 
+
+.my-slider-container {
+  max-width: 150vh;
+  margin: 50px auto;
+  position: relative;
+}
+
+.my-slider {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.my-slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.my-slide img {
+  width: 100%;
+  height: 84vh;
+  object-fit: cover;
+}
+
+.my-prev,
+.my-next {
+  color:crimson;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 42px; /* Increase the font size to make the arrows larger */
+  cursor: pointer;
+}
+.my-prev:hover,
+.my-next:hover{
+  transition: .8s ease;
+    color: #050505;
+}
+
+.my-prev {
+  left: 0;
+}
+
+.my-next {
+  right: 0;
+}
+
+
 /* slider Home */
 
 .slider {
@@ -448,4 +497,10 @@ footer {
   #services .service img {
     display: none;
   }
+    .my-slider {
+      display: none;
+    }
+    .my-prev,.my-next{
+      display: none;
+    }
 }

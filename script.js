@@ -93,6 +93,34 @@ thumbnails.forEach((thumbnail, index) => {
     })
 })
 
+
+let slideIndex = 0;
+
+function showSlides() {
+  const slides = document.querySelectorAll('.my-slide');
+  if (slideIndex >= slides.length) slideIndex = 0;
+  if (slideIndex < 0) slideIndex = slides.length - 1;
+  slides.forEach(slide => {
+    slide.style.display = 'none';
+  });
+  slides[slideIndex].style.display = 'block';
+}
+
+function nextSlide() {
+  slideIndex++;
+  showSlides();
+}
+
+function prevSlide() {
+  slideIndex--;
+  showSlides();
+}
+
+// Automatically transition between slides every 3 seconds
+setInterval(nextSlide, 5000);
+
+showSlides();
+
 // floating Whatsapp
 $(function () {
     $('#myDiv').floatingWhatsApp({
@@ -103,3 +131,4 @@ $(function () {
         position: 'right',
     });
 });
+
