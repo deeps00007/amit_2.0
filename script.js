@@ -126,7 +126,7 @@ $(function () {
     $('#myDiv').floatingWhatsApp({
         phone: '+917217667887',
         showPopup: 'true',
-        popupMessage: "Hello sir ",
+        popupMessage: "Hello sir, just leave a message i'll contact u as soon as possible",
         HeaderTitle: "Whatsapp Chat",
         position: 'right',
     });
